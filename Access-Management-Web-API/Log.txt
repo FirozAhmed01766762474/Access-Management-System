@@ -1,0 +1,44 @@
+2024-08-02 15:24:08.464 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 15:24:08.722 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-02 15:24:08.725 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-02 15:24:08.731 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 15:24:08.733 +06:00 [INF] Hosting environment: Development
+2024-08-02 15:24:08.735 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-02 15:24:09.352 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-02 15:24:09.662 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-02 15:24:09.662 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-02 15:24:09.662 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 311.9196ms
+2024-08-02 15:24:09.680 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 17.7340ms
+2024-08-02 15:24:09.688 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.8092ms
+2024-08-02 15:24:09.756 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-02 15:24:09.835 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-02 15:24:09.837 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 81.6372ms
+2024-08-02 15:24:56.164 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-02 15:24:56.437 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-02 15:24:56.439 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-02 15:24:56.446 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-02 15:24:56.448 +06:00 [INF] Hosting environment: Development
+2024-08-02 15:24:56.451 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-02 15:24:56.853 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-02 15:24:57.176 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 324.4355ms
+2024-08-02 15:24:57.180 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-02 15:24:57.184 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-02 15:24:57.198 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 17.9493ms
+2024-08-02 15:24:57.221 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.1519ms
+2024-08-02 15:24:57.293 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-02 15:24:57.387 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-02 15:24:57.390 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 96.9238ms
