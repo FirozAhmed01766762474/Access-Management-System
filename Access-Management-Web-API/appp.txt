@@ -2038,3 +2038,155 @@ OUTPUT INSERTED.[id], i._Position;
 2024-08-09 20:11:03.316 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.assignrolepermission (Access-Management-Web-API) in 84.0178ms
 2024-08-09 20:11:03.316 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.assignrolepermission (Access-Management-Web-API)'
 2024-08-09 20:11:03.316 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/UserRole/assignrolepermission application/json 473 - 200 - application/json;+charset=utf-8 97.9093ms
+2024-08-10 12:43:21.684 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 12:43:21.930 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 12:43:21.933 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 12:43:21.940 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 12:43:21.943 +06:00 [INF] Hosting environment: Development
+2024-08-10 12:43:21.946 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 12:43:22.326 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 12:43:22.689 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 364.1009ms
+2024-08-10 12:43:22.696 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 12:43:22.696 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 12:43:22.712 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 15.9603ms
+2024-08-10 12:43:22.724 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6138ms
+2024-08-10 12:43:22.910 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 12:43:23.060 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.8666ms
+2024-08-10 12:45:13.110 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/UserRole/assignrolepermission application/json 472
+2024-08-10 12:45:13.128 +06:00 [INF] CORS policy execution successful.
+2024-08-10 12:45:13.303 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.assignrolepermission (Access-Management-Web-API)'
+2024-08-10 12:45:13.352 +06:00 [INF] Route matched with {action = "assignrolepermission", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] assignrolepermission(System.Collections.Generic.List`1[Access_Management_Web_API.Repos.Models.TblRolepermission]) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 12:45:16.092 +06:00 [INF] Executed DbCommand (85ms) [Parameters=[@__item_Userrole_0='?' (Size = 50), @__item_Menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__item_Userrole_0 AND [t].[menucode] = @__item_Menucode_1
+2024-08-10 12:45:16.240 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__item_Userrole_0='?' (Size = 50), @__item_Menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__item_Userrole_0 AND [t].[menucode] = @__item_Menucode_1
+2024-08-10 12:45:16.249 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__item_Userrole_0='?' (Size = 50), @__item_Menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__item_Userrole_0 AND [t].[menucode] = @__item_Menucode_1
+2024-08-10 12:45:16.507 +06:00 [INF] Executed DbCommand (32ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p3='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p5='?' (DbType = Int32), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [tbl_rolepermission] SET [haveedit] = @p0
+OUTPUT 1
+WHERE [id] = @p1;
+UPDATE [tbl_rolepermission] SET [haveedit] = @p2
+OUTPUT 1
+WHERE [id] = @p3;
+UPDATE [tbl_rolepermission] SET [haveedit] = @p4
+OUTPUT 1
+WHERE [id] = @p5;
+2024-08-10 12:45:16.598 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-10 12:45:16.614 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.assignrolepermission (Access-Management-Web-API) in 3252.7737ms
+2024-08-10 12:45:16.616 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.assignrolepermission (Access-Management-Web-API)'
+2024-08-10 12:45:16.630 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/UserRole/assignrolepermission application/json 472 - 200 - application/json;+charset=utf-8 3519.9855ms
+2024-08-10 13:08:58.486 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 13:08:58.733 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 13:08:58.735 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 13:08:58.740 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 13:08:58.742 +06:00 [INF] Hosting environment: Development
+2024-08-10 13:08:58.743 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 13:08:59.099 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 13:08:59.416 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 316.0536ms
+2024-08-10 13:08:59.427 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 13:08:59.427 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 13:08:59.437 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 9.7367ms
+2024-08-10 13:08:59.451 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.7027ms
+2024-08-10 13:08:59.648 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 13:08:59.805 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.2908ms
+2024-08-10 13:09:13.810 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllRoles - -
+2024-08-10 13:09:13.978 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllRoles (Access-Management-Web-API)'
+2024-08-10 13:09:14.014 +06:00 [INF] Route matched with {action = "GetAllRoles", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllRoles() on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:09:16.538 +06:00 [INF] Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[code], [t].[name], [t].[status]
+FROM [tbl_role] AS [t]
+2024-08-10 13:09:16.711 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Repos.Models.TblRole, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 13:09:16.745 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllRoles (Access-Management-Web-API) in 2722.8449ms
+2024-08-10 13:09:16.746 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllRoles (Access-Management-Web-API)'
+2024-08-10 13:09:16.761 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllRoles - - - 200 - application/json;+charset=utf-8 2951.5805ms
+2024-08-10 13:09:28.415 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllManues - -
+2024-08-10 13:09:28.424 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenues (Access-Management-Web-API)'
+2024-08-10 13:09:28.431 +06:00 [INF] Route matched with {action = "GetAllMenues", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenues() on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:09:28.492 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[code], [t].[name], [t].[status]
+FROM [tbl_menu] AS [t]
+2024-08-10 13:09:28.512 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Repos.Models.TblMenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 13:09:28.516 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenues (Access-Management-Web-API) in 84.9454ms
+2024-08-10 13:09:28.517 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenues (Access-Management-Web-API)'
+2024-08-10 13:09:28.517 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllManues - - - 200 - application/json;+charset=utf-8 102.4080ms
+2024-08-10 13:24:01.874 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 13:24:02.080 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 13:24:02.082 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 13:24:02.086 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 13:24:02.087 +06:00 [INF] Hosting environment: Development
+2024-08-10 13:24:02.089 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 13:24:02.561 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 13:24:02.908 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 347.2805ms
+2024-08-10 13:24:02.918 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 13:24:02.918 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 13:24:02.936 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 17.6245ms
+2024-08-10 13:24:02.952 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6106ms
+2024-08-10 13:24:03.012 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 13:24:03.168 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.1845ms
+2024-08-10 13:24:20.404 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=admin - -
+2024-08-10 13:24:20.569 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-10 13:24:20.618 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:24:23.386 +06:00 [INF] Executed DbCommand (100ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-10 13:24:23.448 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 13:24:23.469 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 2841.4802ms
+2024-08-10 13:24:23.470 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-10 13:24:23.488 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=admin - - - 200 - application/json;+charset=utf-8 3083.9383ms
+2024-08-10 13:30:25.003 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 13:30:25.212 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 13:30:25.214 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 13:30:25.218 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 13:30:25.220 +06:00 [INF] Hosting environment: Development
+2024-08-10 13:30:25.222 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 13:30:25.643 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 13:30:26.002 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 361.0860ms
+2024-08-10 13:30:26.012 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 13:30:26.012 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 13:30:26.024 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 12.0797ms
+2024-08-10 13:30:26.037 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.0647ms
+2024-08-10 13:30:26.103 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 13:30:26.264 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.4701ms
+2024-08-10 13:35:29.785 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=admin&menucode=invoice - -
+2024-08-10 13:35:29.952 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:30.004 +06:00 [INF] Route matched with {action = "GetMenupermissionbyrole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenupermissionbyrole(System.String, System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:35:32.723 +06:00 [INF] Executed DbCommand (117ms) [Parameters=[@__userrole_0='?' (Size = 50), @__menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit) AND [t].[menucode] = @__menucode_1
+2024-08-10 13:35:32.911 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.Menupermission'.
+2024-08-10 13:35:32.933 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API) in 2920.2335ms
+2024-08-10 13:35:32.934 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:32.949 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=admin&menucode=invoice - - - 200 - application/json;+charset=utf-8 3164.4797ms
+2024-08-10 13:35:42.939 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=user&menucode=invoice - -
+2024-08-10 13:35:42.946 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:42.947 +06:00 [INF] Route matched with {action = "GetMenupermissionbyrole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenupermissionbyrole(System.String, System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:35:42.998 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userrole_0='?' (Size = 50), @__menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit) AND [t].[menucode] = @__menucode_1
+2024-08-10 13:35:43.003 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.Menupermission'.
+2024-08-10 13:35:43.004 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API) in 56.6974ms
+2024-08-10 13:35:43.004 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:43.005 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=user&menucode=invoice - - - 200 - application/json;+charset=utf-8 65.8753ms
+2024-08-10 13:35:57.706 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=user&menucode=customer - -
+2024-08-10 13:35:57.714 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:57.714 +06:00 [INF] Route matched with {action = "GetMenupermissionbyrole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMenupermissionbyrole(System.String, System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-10 13:35:57.854 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userrole_0='?' (Size = 50), @__menucode_1='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[haveadd], [t].[havedelete], [t].[haveedit], [t].[haveview], [t].[menucode], [t].[userrole]
+FROM [tbl_rolepermission] AS [t]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit) AND [t].[menucode] = @__menucode_1
+2024-08-10 13:35:57.856 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.Menupermission'.
+2024-08-10 13:35:57.856 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API) in 141.5917ms
+2024-08-10 13:35:57.856 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
+2024-08-10 13:35:57.857 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=user&menucode=customer - - - 200 - application/json;+charset=utf-8 151.0319ms
