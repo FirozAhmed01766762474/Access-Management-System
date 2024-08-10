@@ -11,10 +11,12 @@ namespace Access_Management_Web_API.Container
     public class UserService : IUserService
     {
         private readonly LarnDataContext _context;
+        private readonly IEmailService _emailService;
 
-        public UserService(LarnDataContext context)
+        public UserService(LarnDataContext context,IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
         public async Task<ApiResponse> ConfirmRegister(int userid, string username, string otptext)
         {
@@ -287,14 +289,23 @@ namespace Access_Management_Web_API.Container
 
         private async Task SendOtpMail(string useremail, string OtpText, string Name)
         {
-            //var mailrequest = new Mailrequest();
-            //mailrequest.Email = useremail;
-            //mailrequest.Subject = "Thanks for registering : OTP";
-            //mailrequest.Emailbody = GenerateEmailBody(Name, OtpText);
-            //await this.emailService.SendEmail(mailrequest);
+            var mailrequest = new Mailrequest();
+            mailrequest.Email = useremail;
+            mailrequest.Subject = "Thanks for registering : OTP";
+            mailrequest.Emailbody = GenerateEmailBody(Name, OtpText);
+            await _emailService.SendEmail(mailrequest);
 
         }
+        private string GenerateEmailBody(string name, string otptext)
+        {
+            string emailbody = "<div style='width:100%;background-color:grey'>";
+            emailbody += "<h1>Hi " + name + ", Thanks for registering</h1>";
+            emailbody += "<h2>Please enter OTP text and complete the registeration</h2>";
+            emailbody += "<h2>OTP Text is :" + otptext + "</h2>";
+            emailbody += "</div>";
 
+            return emailbody;
+        }
         private async Task<bool> Validatepwdhistory(string Username, string password)
         {
             bool response = false;

@@ -2190,3 +2190,489 @@ WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit) AND [t]
 2024-08-10 13:35:57.856 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API) in 141.5917ms
 2024-08-10 13:35:57.856 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetMenupermissionbyrole (Access-Management-Web-API)'
 2024-08-10 13:35:57.857 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetMenupermissionbyrole?userrole=user&menucode=customer - - - 200 - application/json;+charset=utf-8 151.0319ms
+2024-08-10 16:16:14.908 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 16:16:15.166 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 16:16:15.169 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 16:16:15.174 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 16:16:15.177 +06:00 [INF] Hosting environment: Development
+2024-08-10 16:16:15.179 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 16:16:16.106 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 16:16:16.475 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 370.9673ms
+2024-08-10 16:16:16.480 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 16:16:16.480 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 16:16:16.493 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 12.4698ms
+2024-08-10 16:16:16.504 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.2884ms
+2024-08-10 16:16:16.556 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 16:16:16.734 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.9853ms
+2024-08-10 16:17:51.724 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 16:17:52.052 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 16:17:52.056 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 16:17:52.062 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 16:17:52.064 +06:00 [INF] Hosting environment: Development
+2024-08-10 16:17:52.066 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 16:17:52.950 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 16:17:53.311 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 363.1344ms
+2024-08-10 16:17:53.321 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 16:17:53.321 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 16:17:53.361 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 39.8560ms
+2024-08-10 16:17:53.370 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.0135ms
+2024-08-10 16:17:53.411 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 16:17:53.557 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.0033ms
+2024-08-10 16:20:14.542 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 151
+2024-08-10 16:20:14.549 +06:00 [INF] CORS policy execution successful.
+2024-08-10 16:20:15.570 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 16:20:15.594 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 16:20:18.140 +06:00 [INF] Executed DbCommand (96ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 16:20:18.212 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 16:20:18.421 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 16:20:18.507 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 16:20:23.542 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-10 16:20:23.557 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 7954.5821ms
+2024-08-10 16:20:23.559 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 16:20:23.575 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 151 - 200 - application/json;+charset=utf-8 9033.3987ms
+2024-08-10 17:01:48.099 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:01:48.328 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:01:48.330 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:01:48.336 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:01:48.339 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:01:48.341 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:01:49.444 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:01:49.760 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:01:49.760 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:01:49.773 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 321.7234ms
+2024-08-10 17:01:49.776 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 15.9264ms
+2024-08-10 17:01:49.786 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.6331ms
+2024-08-10 17:01:49.846 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:01:49.988 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4664ms
+2024-08-10 17:03:33.852 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 158
+2024-08-10 17:03:33.867 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:03:33.980 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:03:34.000 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:03:35.756 +06:00 [INF] Executed DbCommand (69ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:03:35.806 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:03:36.026 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:03:36.118 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:03:39.505 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-10 17:03:39.522 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 5513.8578ms
+2024-08-10 17:03:39.524 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:03:39.535 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 158 - 200 - application/json;+charset=utf-8 5683.6335ms
+2024-08-10 17:05:20.833 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 158
+2024-08-10 17:05:20.843 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:05:20.846 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:05:20.847 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:05:20.880 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:05:20.887 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:05:20.900 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:05:20.907 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:13:01.573 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:13:01.817 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:13:01.818 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:13:01.824 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:13:01.826 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:13:01.827 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:13:02.588 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:13:02.862 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 275.5082ms
+2024-08-10 17:13:02.870 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:13:02.870 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:13:02.879 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 8.9440ms
+2024-08-10 17:13:02.891 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.3459ms
+2024-08-10 17:13:02.948 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:13:03.076 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.8875ms
+2024-08-10 17:14:22.213 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 159
+2024-08-10 17:14:22.218 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:14:22.334 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:14:22.378 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:14:24.167 +06:00 [INF] Executed DbCommand (79ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:14:24.248 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:14:24.462 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:14:24.566 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:16:19.052 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:16:19.284 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:16:19.286 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:16:19.292 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:16:19.293 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:16:19.294 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:16:19.978 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:16:20.359 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 384.3213ms
+2024-08-10 17:16:20.373 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:16:20.373 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:16:20.391 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 18.5052ms
+2024-08-10 17:16:20.398 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.2726ms
+2024-08-10 17:16:20.461 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:16:20.631 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.6734ms
+2024-08-10 17:18:54.473 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:18:54.734 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:18:54.737 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:18:54.743 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:18:54.745 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:18:54.747 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:18:55.221 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:18:55.570 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 353.0677ms
+2024-08-10 17:18:55.577 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:18:55.577 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:18:55.610 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 32.1306ms
+2024-08-10 17:18:55.615 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.3018ms
+2024-08-10 17:18:55.678 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:18:55.843 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.4486ms
+2024-08-10 17:20:12.181 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 144
+2024-08-10 17:20:12.187 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:20:12.289 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:20:12.312 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:21:06.580 +06:00 [INF] Executed DbCommand (61ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:21:15.513 +06:00 [INF] Executed DbCommand (16ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:22:10.358 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:22:32.346 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:30:37.329 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:30:37.680 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:30:37.686 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:30:37.693 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:30:37.698 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:30:37.705 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:30:38.345 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:30:38.653 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 312.2247ms
+2024-08-10 17:30:38.661 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:30:38.661 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:30:38.692 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 30.8739ms
+2024-08-10 17:30:38.700 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4974ms
+2024-08-10 17:30:38.746 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:30:38.894 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 147.0604ms
+2024-08-10 17:32:11.395 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 136
+2024-08-10 17:32:11.413 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:32:11.543 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:32:11.583 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:32:52.253 +06:00 [INF] Executed DbCommand (90ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:33:00.174 +06:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:33:20.762 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:33:44.745 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:39:35.715 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:39:35.956 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:39:35.959 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:39:35.965 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:39:35.967 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:39:35.970 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:39:37.158 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:39:37.506 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 348.9212ms
+2024-08-10 17:39:37.515 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:39:37.515 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:39:37.531 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 16.4556ms
+2024-08-10 17:39:37.538 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.6384ms
+2024-08-10 17:39:37.591 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:39:37.734 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.2929ms
+2024-08-10 17:40:58.174 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 17:40:58.369 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 17:40:58.370 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 17:40:58.375 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 17:40:58.377 +06:00 [INF] Hosting environment: Development
+2024-08-10 17:40:58.378 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 17:40:58.890 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 17:40:59.164 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 275.5159ms
+2024-08-10 17:40:59.172 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 17:40:59.172 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 17:40:59.189 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 17.0167ms
+2024-08-10 17:40:59.197 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.4189ms
+2024-08-10 17:40:59.253 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 17:40:59.383 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.6948ms
+2024-08-10 17:42:03.009 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 144
+2024-08-10 17:42:03.030 +06:00 [INF] CORS policy execution successful.
+2024-08-10 17:42:03.136 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:42:03.166 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-10 17:42:19.176 +06:00 [INF] Executed DbCommand (80ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-10 17:42:25.966 +06:00 [INF] Executed DbCommand (29ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-10 17:42:41.538 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:42:57.279 +06:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-10 17:44:14.129 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-10 17:44:14.235 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 131064.3547ms
+2024-08-10 17:44:14.236 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-10 17:44:14.252 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 144 - 200 - application/json;+charset=utf-8 131243.5879ms
+2024-08-10 20:53:21.867 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 20:53:22.226 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 20:53:22.232 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 20:53:22.239 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 20:53:22.270 +06:00 [INF] Hosting environment: Development
+2024-08-10 20:53:22.279 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 20:53:22.911 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 20:53:23.296 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 387.8734ms
+2024-08-10 20:53:23.312 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 20:53:23.319 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 20:53:23.321 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 8.5004ms
+2024-08-10 20:53:23.363 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.9012ms
+2024-08-10 20:53:23.523 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 20:53:23.672 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 148.5256ms
+2024-08-10 20:53:37.716 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Associate/GetAll - -
+2024-08-10 20:53:37.823 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAll (Access-Management-Web-API)'
+2024-08-10 20:53:37.837 +06:00 [INF] Route matched with {action = "GetAll", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 20:53:38.886 +06:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+exec sp_getCustomer
+2024-08-10 20:53:38.958 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Repos.Models.TblCustomer, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 20:53:38.982 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.GetAll (Access-Management-Web-API) in 1141.1371ms
+2024-08-10 20:53:38.983 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAll (Access-Management-Web-API)'
+2024-08-10 20:53:38.990 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Associate/GetAll - - - 200 - application/json;+charset=utf-8 1274.2484ms
+2024-08-10 21:04:06.855 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:04:07.103 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:04:07.105 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:04:07.110 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:04:07.112 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:04:07.114 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:04:07.779 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:04:08.088 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 307.7061ms
+2024-08-10 21:04:08.096 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:04:08.096 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:04:08.110 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 13.6921ms
+2024-08-10 21:04:08.121 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9943ms
+2024-08-10 21:04:08.178 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:04:08.312 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.1613ms
+2024-08-10 21:04:18.631 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Associate/GetAllCustome - -
+2024-08-10 21:04:18.748 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAllCustome (Access-Management-Web-API)'
+2024-08-10 21:04:18.769 +06:00 [INF] Route matched with {action = "GetAllCustome", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustome() on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:04:20.168 +06:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+exec sp_getcustomer_custom
+2024-08-10 21:04:20.234 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Customermodal, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 21:04:20.262 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.GetAllCustome (Access-Management-Web-API) in 1484.9234ms
+2024-08-10 21:04:20.264 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAllCustome (Access-Management-Web-API)'
+2024-08-10 21:04:20.276 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Associate/GetAllCustome - - - 200 - application/json;+charset=utf-8 1645.7810ms
+2024-08-10 21:06:12.276 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:06:12.498 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:06:12.503 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:06:12.510 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:06:12.514 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:06:12.517 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:06:12.816 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:06:13.124 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 308.2717ms
+2024-08-10 21:06:13.127 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:06:13.130 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:06:13.134 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 6.6640ms
+2024-08-10 21:06:13.154 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.7942ms
+2024-08-10 21:06:13.204 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:06:13.316 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.3953ms
+2024-08-10 21:06:19.933 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Associate/GetAllCustomeq - -
+2024-08-10 21:06:20.073 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAllCustomeq (Access-Management-Web-API)'
+2024-08-10 21:06:20.105 +06:00 [INF] Route matched with {action = "GetAllCustomeq", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomeq() on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:06:21.633 +06:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+Select *,'Active' as Statusname from tbl_customer
+2024-08-10 21:06:21.714 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Customermodal, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-10 21:06:21.752 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.GetAllCustomeq (Access-Management-Web-API) in 1641.4422ms
+2024-08-10 21:06:21.754 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetAllCustomeq (Access-Management-Web-API)'
+2024-08-10 21:06:21.767 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Associate/GetAllCustomeq - - - 200 - application/json;+charset=utf-8 1833.5107ms
+2024-08-10 21:11:47.978 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:11:48.180 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:11:48.182 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:11:48.188 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:11:48.189 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:11:48.191 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:11:48.836 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:11:49.139 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:11:49.139 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:11:49.148 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 316.6002ms
+2024-08-10 21:11:49.163 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 24.0041ms
+2024-08-10 21:11:49.261 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 121.5675ms
+2024-08-10 21:11:49.309 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:11:49.436 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.9663ms
+2024-08-10 21:12:00.517 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Associate/GetbyCode?code=001 - -
+2024-08-10 21:12:00.635 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API)'
+2024-08-10 21:12:00.656 +06:00 [INF] Route matched with {action = "GetbyCode", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyCode(System.String) on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:12:01.619 +06:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2024-08-10 21:12:02.263 +06:00 [INF] Executed DbCommand (90ms) [Parameters=[@code='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Code], [a].[Creditlimit], [a].[Email], [a].[IsActive], [a].[Name], [a].[Phone], [a].[Statusname]
+FROM (
+    Select *,'Active' as Statusname from tbl_customer where code=@code
+) AS [a]
+2024-08-10 21:12:02.323 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.Customermodal'.
+2024-08-10 21:12:02.366 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API) in 1703.3645ms
+2024-08-10 21:12:02.368 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API)'
+2024-08-10 21:12:02.380 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Associate/GetbyCode?code=001 - - - 200 - application/json;+charset=utf-8 1863.4196ms
+2024-08-10 21:12:09.961 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Associate/GetbyCode?code=002 - -
+2024-08-10 21:12:09.970 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API)'
+2024-08-10 21:12:09.971 +06:00 [INF] Route matched with {action = "GetbyCode", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbyCode(System.String) on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:12:10.000 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@code='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Code], [a].[Creditlimit], [a].[Email], [a].[IsActive], [a].[Name], [a].[Phone], [a].[Statusname]
+FROM (
+    Select *,'Active' as Statusname from tbl_customer where code=@code
+) AS [a]
+2024-08-10 21:12:10.002 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.Customermodal'.
+2024-08-10 21:12:10.002 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API) in 30.5889ms
+2024-08-10 21:12:10.002 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.GetbyCode (Access-Management-Web-API)'
+2024-08-10 21:12:10.003 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Associate/GetbyCode?code=002 - - - 200 - application/json;+charset=utf-8 42.1387ms
+2024-08-10 21:29:19.536 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:29:19.730 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:29:19.732 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:29:19.735 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:29:19.737 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:29:19.739 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:29:20.319 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:29:20.630 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 311.8360ms
+2024-08-10 21:29:20.638 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:29:20.638 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:29:20.662 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 23.8623ms
+2024-08-10 21:29:20.671 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.1082ms
+2024-08-10 21:29:20.727 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:29:20.854 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.5575ms
+2024-08-10 21:31:39.053 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:31:39.269 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:31:39.272 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:31:39.278 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:31:39.282 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:31:39.284 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:31:39.999 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:31:40.316 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 315.8886ms
+2024-08-10 21:31:40.328 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:31:40.330 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:31:40.342 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 14.4439ms
+2024-08-10 21:31:40.351 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.6969ms
+2024-08-10 21:31:40.413 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:31:40.549 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.0353ms
+2024-08-10 21:31:59.352 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Associate/Create application/json 137
+2024-08-10 21:31:59.360 +06:00 [INF] CORS policy execution successful.
+2024-08-10 21:31:59.487 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.Create (Access-Management-Web-API)'
+2024-08-10 21:31:59.509 +06:00 [INF] Route matched with {action = "Create", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Access_Management_Web_API.Repos.Models.TblCustomer) on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:32:00.928 +06:00 [INF] Executed DbCommand (107ms) [Parameters=[@code='?' (Size = 3), @name='?' (Size = 6), @email='?' (Size = 6), @phone='?' (Size = 6), @creditlimit='?' (DbType = Decimal), @active='?' (DbType = Boolean), @taxcode='?' (DbType = Int32), @type='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+exec sp_createcustomer @code,@name,@email,@phone,@creditlimit,@active,@taxcode,@type
+2024-08-10 21:32:00.953 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-08-10 21:32:00.961 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.Create (Access-Management-Web-API) in 1448.3285ms
+2024-08-10 21:32:00.962 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.Create (Access-Management-Web-API)'
+2024-08-10 21:32:00.973 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Associate/Create application/json 137 - 200 - application/json;+charset=utf-8 1621.0706ms
+2024-08-10 21:43:59.835 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-10 21:44:00.052 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-10 21:44:00.056 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-10 21:44:00.060 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-10 21:44:00.062 +06:00 [INF] Hosting environment: Development
+2024-08-10 21:44:00.063 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-10 21:44:00.699 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-10 21:44:00.997 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 298.8926ms
+2024-08-10 21:44:01.004 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-10 21:44:01.004 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-10 21:44:01.018 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 13.5034ms
+2024-08-10 21:44:01.030 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.8923ms
+2024-08-10 21:44:01.085 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-10 21:44:01.215 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.9613ms
+2024-08-10 21:45:40.279 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Associate/Update?code=011 application/json 151
+2024-08-10 21:45:40.293 +06:00 [INF] CORS policy execution successful.
+2024-08-10 21:45:40.409 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.Update (Access-Management-Web-API)'
+2024-08-10 21:45:40.442 +06:00 [INF] Route matched with {action = "Update", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.String, Access_Management_Web_API.Repos.Models.TblCustomer) on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:45:41.824 +06:00 [INF] Executed DbCommand (75ms) [Parameters=[@code='?' (Size = 3), @name='?' (Size = 11), @email='?' (Size = 11), @phone='?' (Size = 4), @creditlimit='?' (DbType = Decimal), @active='?' (DbType = Boolean), @taxcode='?' (DbType = Int32), @type='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+exec sp_createcustomer @code,@name,@email,@phone,@creditlimit,@active,@taxcode,@type
+2024-08-10 21:45:41.850 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-08-10 21:45:41.870 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.Update (Access-Management-Web-API) in 1417.9981ms
+2024-08-10 21:45:41.871 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.Update (Access-Management-Web-API)'
+2024-08-10 21:45:41.884 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Associate/Update?code=011 application/json 151 - 200 - application/json;+charset=utf-8 1606.4909ms
+2024-08-10 21:46:20.870 +06:00 [INF] Request starting HTTP/2 DELETE https://localhost:7202/api/Associate/delete?code=string - -
+2024-08-10 21:46:20.886 +06:00 [INF] CORS policy execution successful.
+2024-08-10 21:46:20.887 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AssociateController.delete (Access-Management-Web-API)'
+2024-08-10 21:46:20.893 +06:00 [INF] Route matched with {action = "delete", controller = "Associate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] delete(System.String) on controller Access_Management_Web_API.Controllers.AssociateController (Access-Management-Web-API).
+2024-08-10 21:46:20.934 +06:00 [INF] Executed DbCommand (13ms) [Parameters=[@code='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+exec sp_deletecustomer @code
+2024-08-10 21:46:20.937 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-08-10 21:46:20.937 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.delete (Access-Management-Web-API) in 43.5366ms
+2024-08-10 21:46:20.937 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.delete (Access-Management-Web-API)'
+2024-08-10 21:46:20.938 +06:00 [INF] Request finished HTTP/2 DELETE https://localhost:7202/api/Associate/delete?code=string - - - 200 - application/json;+charset=utf-8 67.5420ms

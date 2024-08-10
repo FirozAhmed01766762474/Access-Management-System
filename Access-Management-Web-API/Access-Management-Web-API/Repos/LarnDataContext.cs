@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Access_Management_Web_API.Model;
 using Access_Management_Web_API.Repos.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,6 +38,8 @@ public partial class LarnDataContext : DbContext
     public virtual DbSet<TblTempuser> TblTempusers { get; set; }
 
     public virtual DbSet<TblUser> TblUsers { get; set; }
+
+    public virtual DbSet<Customermodal> customerdetails { get; set; }
 
    
 
