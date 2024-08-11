@@ -26,20 +26,20 @@ namespace Access_Management_Web_API.Controllers
             return Ok(data);    
         }
 
-        [HttpPost("ConfirmRegistatio")]
+        [HttpPost("ConfirmRegistation")]
 
-        public async Task<IActionResult> ConfirmRegistatio(int userid, string username,string otptext)
+        public async Task<IActionResult> ConfirmRegistation(Confirmpassword confirmpassword)
         {
-            var data = await _service.ConfirmRegister(userid, username,otptext);
+            var data = await _service.ConfirmRegister(confirmpassword.userid, confirmpassword.username, confirmpassword.otptext);
 
             return Ok(data);
         }
 
         [HttpPost("ResetPassword")]
 
-        public async Task<IActionResult> ResetPassword(string username, string oldpassword, string newpassword)
+        public async Task<IActionResult> ResetPassword(Resetpassword resetpassword)
         {
-            var data = await _service.ResetPassword( username,  oldpassword,  newpassword);
+            var data = await _service.ResetPassword(resetpassword.username, resetpassword.oldpassword, resetpassword.newpassword);
 
             return Ok(data);
         }
@@ -55,27 +55,27 @@ namespace Access_Management_Web_API.Controllers
 
         [HttpPost("UpdatePassword")]
 
-        public async Task<IActionResult> UpdatePassword(string username, string Password, string Otptext)
+        public async Task<IActionResult> UpdatePassword(Updatepassword updatepassword)
         {
-            var data = await _service.UpdatePassword(username,Password,Otptext);
+            var data = await _service.UpdatePassword(updatepassword.username, updatepassword.password, updatepassword.otptext);
 
             return Ok(data);
         }
 
         [HttpPost("UpdateStatus")]
 
-        public async Task<IActionResult> UpdateStatus(string username, bool status)
+        public async Task<IActionResult> UpdateStatus(Updatestatus updatestatus)
         {
-            var data = await _service.UpdateStatus(username, status);
+            var data = await _service.UpdateStatus(updatestatus.username, updatestatus.status);
 
             return Ok(data);
         }
 
         [HttpPost("UpdateUserRole")]
 
-        public async Task<IActionResult> UpdateUserRole(string username, string userRole)
+        public async Task<IActionResult> UpdateUserRole(UpdateRole updateRole)
         {
-            var data = await _service.UpdateUserRole(username, userRole);
+            var data = await _service.UpdateUserRole(updateRole.username, updateRole.role);
 
             return Ok(data);
         }

@@ -2676,3 +2676,611 @@ exec sp_deletecustomer @code
 2024-08-10 21:46:20.937 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AssociateController.delete (Access-Management-Web-API) in 43.5366ms
 2024-08-10 21:46:20.937 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AssociateController.delete (Access-Management-Web-API)'
 2024-08-10 21:46:20.938 +06:00 [INF] Request finished HTTP/2 DELETE https://localhost:7202/api/Associate/delete?code=string - - - 200 - application/json;+charset=utf-8 67.5420ms
+2024-08-11 11:11:01.353 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 11:11:01.759 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 11:11:01.763 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 11:11:01.769 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 11:11:01.772 +06:00 [INF] Hosting environment: Development
+2024-08-11 11:11:01.774 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 11:11:02.461 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 11:11:02.975 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 11:11:02.977 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 11:11:02.978 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 510.9098ms
+2024-08-11 11:11:03.012 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 36.4469ms
+2024-08-11 11:11:03.036 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.6652ms
+2024-08-11 11:11:03.083 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 11:11:03.244 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.0137ms
+2024-08-11 11:45:22.156 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 11:45:22.491 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 11:45:22.494 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 11:45:22.498 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 11:45:22.499 +06:00 [INF] Hosting environment: Development
+2024-08-11 11:45:22.501 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 11:45:23.394 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 11:45:23.829 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 437.2289ms
+2024-08-11 11:45:23.844 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 11:45:23.845 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 11:45:23.860 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 16.1114ms
+2024-08-11 11:45:23.888 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.1846ms
+2024-08-11 11:45:24.017 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 11:45:24.177 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.1484ms
+2024-08-11 11:45:38.096 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/Customer/GetAll - -
+2024-08-11 11:45:39.572 +06:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-08-11 11:45:39.575 +06:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-08-11 11:45:39.575 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/Customer/GetAll - - - 401 0 - 1480.0470ms
+2024-08-11 14:27:29.628 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 112
+2024-08-11 14:27:29.634 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:27:29.639 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:27:29.665 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:27:38.314 +06:00 [INF] Executed DbCommand (95ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 14:27:38.358 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 14:27:38.487 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 14:27:38.549 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 14:27:41.522 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 14:27:41.528 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 11860.3162ms
+2024-08-11 14:27:41.529 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:27:41.536 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 112 - 200 - application/json;+charset=utf-8 11907.2670ms
+2024-08-11 14:44:54.816 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 14:44:55.093 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 14:44:55.096 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 14:44:55.101 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 14:44:55.104 +06:00 [INF] Hosting environment: Development
+2024-08-11 14:44:55.106 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 14:44:55.613 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 14:44:56.030 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 417.0765ms
+2024-08-11 14:44:56.038 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 14:44:56.038 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 14:44:56.047 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 9.3722ms
+2024-08-11 14:44:56.064 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.0833ms
+2024-08-11 14:44:56.121 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 14:44:56.274 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 152.8372ms
+2024-08-11 14:46:24.072 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 14:46:24.082 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:46:24.084 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 12.3900ms
+2024-08-11 14:46:24.088 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121
+2024-08-11 14:46:24.095 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:46:25.570 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:46:25.615 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:46:25.958 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 14:46:25.973 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 350.6056ms
+2024-08-11 14:46:25.975 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:46:25.979 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121 - 400 - application/problem+json;+charset=utf-8 1891.3337ms
+2024-08-11 14:47:30.596 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 14:47:30.602 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:47:30.605 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 6.8930ms
+2024-08-11 14:47:30.610 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121
+2024-08-11 14:47:30.610 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:47:30.615 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:47:30.625 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:47:30.647 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 14:47:30.648 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 22.8743ms
+2024-08-11 14:47:30.648 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:47:30.649 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121 - 400 - application/problem+json;+charset=utf-8 38.7969ms
+2024-08-11 14:49:26.031 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 14:49:26.031 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:49:26.032 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 1.0393ms
+2024-08-11 14:49:26.042 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121
+2024-08-11 14:49:26.043 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:49:26.048 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:49:26.048 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:49:26.052 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 14:49:26.053 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 4.5726ms
+2024-08-11 14:49:26.053 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:49:26.053 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121 - 400 - application/problem+json;+charset=utf-8 13.5486ms
+2024-08-11 14:55:11.412 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 14:55:11.412 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:55:11.413 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 1.4202ms
+2024-08-11 14:55:11.416 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121
+2024-08-11 14:55:11.416 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:55:11.416 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:55:11.416 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:55:11.418 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 14:55:11.418 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 1.6357ms
+2024-08-11 14:55:11.418 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:55:11.418 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121 - 400 - application/problem+json;+charset=utf-8 2.5663ms
+2024-08-11 14:55:59.207 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 14:55:59.207 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:55:59.210 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 1.1005ms
+2024-08-11 14:55:59.221 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121
+2024-08-11 14:55:59.222 +06:00 [INF] CORS policy execution successful.
+2024-08-11 14:55:59.223 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:55:59.223 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 14:55:59.224 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 14:55:59.225 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 1.6837ms
+2024-08-11 14:55:59.225 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 14:55:59.225 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 121 - 400 - application/problem+json;+charset=utf-8 4.0858ms
+2024-08-11 15:16:11.194 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 112
+2024-08-11 15:16:11.199 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:16:11.202 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:16:11.209 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:16:16.407 +06:00 [INF] Executed DbCommand (122ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:16:16.502 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:16:16.847 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:16:16.992 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:16:20.286 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:16:20.292 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 9082.4389ms
+2024-08-11 15:16:20.293 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:16:20.308 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 112 - 200 - application/json;+charset=utf-8 9118.9008ms
+2024-08-11 15:20:12.311 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:20:12.315 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:20:12.315 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 3.6052ms
+2024-08-11 15:20:12.318 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 118
+2024-08-11 15:20:12.318 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:20:12.319 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:20:12.319 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:20:12.321 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 15:20:12.321 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 2.0155ms
+2024-08-11 15:20:12.321 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:20:12.322 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 118 - 400 - application/problem+json;+charset=utf-8 3.4437ms
+2024-08-11 15:24:16.379 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:24:16.379 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:24:16.380 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 1.0230ms
+2024-08-11 15:24:16.383 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 118
+2024-08-11 15:24:16.383 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:24:16.384 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:24:16.384 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:24:16.386 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-08-11 15:24:16.386 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 2.3983ms
+2024-08-11 15:24:16.387 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:24:16.387 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 118 - 400 - application/problem+json;+charset=utf-8 3.8960ms
+2024-08-11 15:32:02.582 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:32:02.585 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:32:02.587 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 4.6458ms
+2024-08-11 15:32:02.597 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125
+2024-08-11 15:32:02.598 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:32:02.598 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:32:02.598 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:32:22.637 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:32:22.693 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:32:22.693 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:32:22.694 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 20095.5452ms
+2024-08-11 15:32:22.694 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:32:22.696 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125 - 200 - application/json;+charset=utf-8 20098.3149ms
+2024-08-11 15:32:36.403 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:32:36.403 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:32:36.403 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 0.4311ms
+2024-08-11 15:32:36.407 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125
+2024-08-11 15:32:36.407 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:32:36.407 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:32:36.408 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:32:38.792 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:32:38.800 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:32:38.801 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:32:38.801 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 2393.8652ms
+2024-08-11 15:32:38.802 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:32:38.802 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125 - 200 - application/json;+charset=utf-8 2394.8519ms
+2024-08-11 15:35:07.591 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:35:07.595 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:35:07.597 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 10.3536ms
+2024-08-11 15:35:07.601 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125
+2024-08-11 15:35:07.601 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:35:07.602 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:35:07.603 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:35:16.470 +06:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:37:29.972 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:37:29.972 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:37:29.972 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 0.4387ms
+2024-08-11 15:37:29.983 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:37:29.984 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:37:29.984 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125
+2024-08-11 15:37:29.984 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 142381.5073ms
+2024-08-11 15:37:29.984 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:37:29.985 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125 - 200 - application/json;+charset=utf-8 142383.8078ms
+2024-08-11 15:37:29.985 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:37:29.985 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:37:29.985 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:37:33.815 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:37:33.820 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:37:33.829 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:37:33.838 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:37:37.718 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:37:37.719 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 7733.6203ms
+2024-08-11 15:37:37.719 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:37:37.719 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 125 - 200 - application/json;+charset=utf-8 7735.4644ms
+2024-08-11 15:39:12.296 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 15:39:12.512 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 15:39:12.515 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 15:39:12.521 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 15:39:12.523 +06:00 [INF] Hosting environment: Development
+2024-08-11 15:39:12.525 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 15:39:12.960 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 15:39:13.303 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 345.0585ms
+2024-08-11 15:39:13.317 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 15:39:13.317 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 15:39:13.331 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 13.7207ms
+2024-08-11 15:39:13.348 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.3849ms
+2024-08-11 15:39:13.413 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 15:39:13.648 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.1754ms
+2024-08-11 15:40:59.644 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 15:40:59.658 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:40:59.662 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 17.9359ms
+2024-08-11 15:40:59.665 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 122
+2024-08-11 15:40:59.673 +06:00 [INF] CORS policy execution successful.
+2024-08-11 15:40:59.852 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:40:59.916 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 15:41:25.934 +06:00 [INF] Executed DbCommand (131ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 15:41:30.076 +06:00 [INF] Executed DbCommand (35ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 15:41:38.796 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:41:55.648 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 15:42:56.151 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 15:42:56.273 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 116352.2862ms
+2024-08-11 15:42:56.276 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 15:42:56.286 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 122 - 200 - application/json;+charset=utf-8 116621.2978ms
+2024-08-11 16:29:42.037 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 16:29:42.057 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:29:42.057 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 20.6008ms
+2024-08-11 16:29:42.060 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 130
+2024-08-11 16:29:42.061 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:29:42.065 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:29:42.066 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 16:29:56.356 +06:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 16:30:04.203 +06:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 16:30:16.543 +06:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:30:30.128 +06:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:31:28.606 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 16:31:28.625 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 106558.0735ms
+2024-08-11 16:31:28.625 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:31:28.626 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 130 - 200 - application/json;+charset=utf-8 106565.4850ms
+2024-08-11 16:36:18.898 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 16:36:18.898 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:36:18.899 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 1.0189ms
+2024-08-11 16:36:18.908 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 130
+2024-08-11 16:36:18.910 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:36:18.917 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:36:18.918 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 16:36:19.065 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 16:36:19.075 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 16:36:19.086 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:36:19.095 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:36:23.193 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 16:36:23.194 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 4276.3646ms
+2024-08-11 16:36:23.194 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:36:23.195 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 130 - 200 - application/json;+charset=utf-8 4287.2068ms
+2024-08-11 16:42:38.740 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 16:42:38.741 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:42:38.748 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 8.3865ms
+2024-08-11 16:42:38.753 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 126
+2024-08-11 16:42:38.754 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:42:38.754 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:42:38.754 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 16:42:38.784 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 16:42:38.793 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 16:42:38.805 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:42:38.816 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-11 16:42:42.488 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 16:42:42.488 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 3733.9311ms
+2024-08-11 16:42:42.489 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:42:42.489 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 126 - 200 - application/json;+charset=utf-8 3735.4828ms
+2024-08-11 16:54:30.176 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 16:54:30.390 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 16:54:30.392 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 16:54:30.396 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 16:54:30.398 +06:00 [INF] Hosting environment: Development
+2024-08-11 16:54:30.400 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 16:54:30.839 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 16:54:31.167 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 328.8033ms
+2024-08-11 16:54:31.178 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 16:54:31.178 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 16:54:31.192 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 13.1919ms
+2024-08-11 16:54:31.202 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.1855ms
+2024-08-11 16:54:31.262 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 16:54:31.430 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 167.1193ms
+2024-08-11 16:56:14.600 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 16:56:14.623 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:56:14.626 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 26.6740ms
+2024-08-11 16:56:14.631 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 113
+2024-08-11 16:56:14.638 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:56:14.796 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:56:14.846 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 16:56:22.428 +06:00 [INF] Executed DbCommand (103ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 16:56:22.608 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 16:56:22.625 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 16:56:22.643 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 7787.6121ms
+2024-08-11 16:56:22.644 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:56:22.659 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 113 - 200 - application/json;+charset=utf-8 8027.9245ms
+2024-08-11 16:56:43.330 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 16:56:43.332 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:56:43.332 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 2.4754ms
+2024-08-11 16:56:43.336 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 113
+2024-08-11 16:56:43.336 +06:00 [INF] CORS policy execution successful.
+2024-08-11 16:56:43.340 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:56:43.341 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 16:56:43.388 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 16:56:43.400 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 16:56:43.401 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 16:56:43.402 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 61.4915ms
+2024-08-11 16:56:43.402 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 16:56:43.403 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 113 - 200 - application/json;+charset=utf-8 67.5802ms
+2024-08-11 17:14:06.203 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 17:14:06.421 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 17:14:06.423 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 17:14:06.430 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 17:14:06.432 +06:00 [INF] Hosting environment: Development
+2024-08-11 17:14:06.434 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 17:14:06.833 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 17:14:07.184 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 354.4223ms
+2024-08-11 17:14:07.189 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 17:14:07.189 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 17:14:07.199 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 10.1045ms
+2024-08-11 17:14:07.209 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3700ms
+2024-08-11 17:14:07.271 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 17:14:07.411 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.5988ms
+2024-08-11 17:15:20.756 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-11 17:15:20.769 +06:00 [INF] CORS policy execution successful.
+2024-08-11 17:15:20.773 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 18.3599ms
+2024-08-11 17:15:20.776 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 114
+2024-08-11 17:15:20.783 +06:00 [INF] CORS policy execution successful.
+2024-08-11 17:15:20.932 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 17:15:20.977 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-11 17:15:23.757 +06:00 [INF] Executed DbCommand (122ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-11 17:15:23.986 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-11 17:15:24.006 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-11 17:15:24.026 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 3039.9865ms
+2024-08-11 17:15:24.027 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-11 17:15:24.046 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 114 - 200 - application/json;+charset=utf-8 3269.6873ms
+2024-08-11 22:46:56.100 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 22:46:56.419 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 22:46:56.422 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 22:46:56.438 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 22:46:56.440 +06:00 [INF] Hosting environment: Development
+2024-08-11 22:46:56.444 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 22:46:57.258 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 22:46:57.750 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 493.9135ms
+2024-08-11 22:46:57.757 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 22:46:57.757 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 22:46:57.775 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 17.6816ms
+2024-08-11 22:46:57.800 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.5203ms
+2024-08-11 22:46:57.864 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 22:46:58.029 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.8177ms
+2024-08-11 23:10:39.328 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 23:10:39.504 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 23:10:39.507 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 23:10:39.511 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 23:10:39.513 +06:00 [INF] Hosting environment: Development
+2024-08-11 23:10:39.515 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 23:10:40.228 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 23:10:40.510 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 282.3084ms
+2024-08-11 23:10:40.518 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 23:10:40.518 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 23:10:40.533 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 14.6500ms
+2024-08-11 23:10:40.546 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.0031ms
+2024-08-11 23:10:40.600 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 23:10:40.720 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.5621ms
+2024-08-11 23:11:06.371 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 23:11:06.569 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-11 23:11:06.571 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-11 23:11:06.576 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 23:11:06.578 +06:00 [INF] Hosting environment: Development
+2024-08-11 23:11:06.579 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-11 23:11:07.282 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-11 23:11:07.574 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-11 23:11:07.574 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-11 23:11:07.576 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 294.7107ms
+2024-08-11 23:11:07.601 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 26.7831ms
+2024-08-11 23:11:07.613 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.6279ms
+2024-08-11 23:11:07.688 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-11 23:11:07.834 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.2262ms
+2024-08-12 00:25:39.861 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 00:25:40.108 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-12 00:25:40.111 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-12 00:25:40.117 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 00:25:40.121 +06:00 [INF] Hosting environment: Development
+2024-08-12 00:25:40.124 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-12 00:25:40.606 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-12 00:25:40.923 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 313.2863ms
+2024-08-12 00:25:40.927 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-12 00:25:40.931 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-12 00:25:40.946 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 18.4101ms
+2024-08-12 00:25:40.965 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.5648ms
+2024-08-12 00:25:41.060 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-12 00:25:41.251 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.1373ms
+2024-08-12 00:25:56.704 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - -
+2024-08-12 00:25:56.710 +06:00 [INF] CORS policy execution successful.
+2024-08-12 00:25:56.711 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/UserRegistation - - - 204 - - 6.8741ms
+2024-08-12 00:25:56.713 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 120
+2024-08-12 00:25:56.716 +06:00 [INF] CORS policy execution successful.
+2024-08-12 00:25:56.822 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-12 00:25:56.849 +06:00 [INF] Route matched with {action = "UserRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserRegistation(Access_Management_Web_API.Model.UserRegister) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-12 00:25:58.561 +06:00 [INF] Executed DbCommand (51ms) [Parameters=[@__userRegister_UserName_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userRegister_UserName_0
+2024-08-12 00:25:58.621 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userRegister_Email_0='?' (Size = 100) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[email] = @__userRegister_Email_0
+2024-08-12 00:25:58.823 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (Size = 250) (DbType = AnsiString), @p3='?' (Size = 50) (DbType = AnsiString), @p4='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_tempuser] ([code], [email], [name], [password], [phone])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-12 00:25:58.935 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime), @p2='?' (Size = 10) (DbType = AnsiString), @p3='?' (Size = 20) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_otpManager] ([createddate], [expiration], [otptext], [otptype], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-08-12 00:26:03.946 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-12 00:26:03.954 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API) in 7100.2132ms
+2024-08-12 00:26:03.955 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.UserRegistation (Access-Management-Web-API)'
+2024-08-12 00:26:03.964 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/UserRegistation application/json 120 - 200 - application/json;+charset=utf-8 7250.4155ms
+2024-08-12 00:27:14.328 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/User/ConfirmRegistation - -
+2024-08-12 00:27:14.330 +06:00 [INF] CORS policy execution successful.
+2024-08-12 00:27:14.331 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/User/ConfirmRegistation - - - 204 - - 3.8442ms
+2024-08-12 00:27:14.334 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/User/ConfirmRegistation application/json 60
+2024-08-12 00:27:14.334 +06:00 [INF] CORS policy execution successful.
+2024-08-12 00:27:14.336 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserController.ConfirmRegistation (Access-Management-Web-API)'
+2024-08-12 00:27:14.340 +06:00 [INF] Route matched with {action = "ConfirmRegistation", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ConfirmRegistation(Access_Management_Web_API.Model.Confirmpassword) on controller Access_Management_Web_API.Controllers.UserController (Access-Management-Web-API).
+2024-08-12 00:27:14.401 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__OTPText_1='?' (Size = 10) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[createddate], [t].[expiration], [t].[otptext], [t].[otptype], [t].[username]
+FROM [tbl_otpManager] AS [t]
+WHERE [t].[username] = @__username_0 AND [t].[otptext] = @__OTPText_1 AND [t].[expiration] > GETDATE()
+2024-08-12 00:27:14.425 +06:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userid_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[code], [t].[email], [t].[name], [t].[password], [t].[phone]
+FROM [tbl_tempuser] AS [t]
+WHERE [t].[id] = @__userid_0
+2024-08-12 00:27:14.472 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 250) (DbType = AnsiString), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (Size = 20) (DbType = AnsiString), @p8='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_user] ([username], [email], [failattempt], [isactive], [islocked], [name], [password], [phone], [role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-08-12 00:27:14.498 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 200), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_pwdManger] ([ModifyDate], [password], [username])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2);
+2024-08-12 00:27:14.502 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Helper.ApiResponse'.
+2024-08-12 00:27:14.502 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.ConfirmRegistation (Access-Management-Web-API) in 162.1345ms
+2024-08-12 00:27:14.502 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.ConfirmRegistation (Access-Management-Web-API)'
+2024-08-12 00:27:14.503 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/ConfirmRegistation application/json 60 - 200 - application/json;+charset=utf-8 169.1933ms

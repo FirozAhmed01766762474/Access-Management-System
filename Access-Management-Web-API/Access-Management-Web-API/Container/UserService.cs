@@ -102,6 +102,7 @@ namespace Access_Management_Web_API.Container
             catch (Exception ex)
             {
                 response.Result = "fail";
+                response.Message += ex.Message;
             }
 
             return response;
