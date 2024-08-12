@@ -4,5 +4,6 @@
     {
         public string Token { get; set; }
         public string ReferaseToken { get; set; }
+        public string UserRole { get; set; }
     }
 }

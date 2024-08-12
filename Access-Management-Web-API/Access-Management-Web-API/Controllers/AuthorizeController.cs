@@ -26,9 +26,10 @@ namespace Access_Management_Web_API.Controllers
             _jwtSettings = options.Value;
         }
 
-        
 
-        [HttpPost]
+   
+
+        [HttpPost("GenerateToken")]
         public async Task<IActionResult> GenerateToken([FromBody] UserCard userCard)
         {
             var user = await _context.TblUsers.FirstOrDefaultAsync(item => item.Username == userCard.username && item.Password == userCard.password);
@@ -53,7 +54,7 @@ namespace Access_Management_Web_API.Controllers
                 var token = tokenhandelar.CreateToken(tokenDes);
                 var finaltoken = tokenhandelar.WriteToken(token);
 
-                return Ok(new TokenResponse() { Token=finaltoken,ReferaseToken= await _referese.GenerateToken(userCard.username)});
+                return Ok(new TokenResponse() { Token=finaltoken,ReferaseToken= await _referese.GenerateToken(userCard.username), UserRole = user.Role});
 
             }
             else
@@ -99,7 +100,7 @@ namespace Access_Management_Web_API.Controllers
                             );
 
                         var _finaltoken = tokenhandler.WriteToken(_newtoken);
-                        return Ok(new TokenResponse() { Token = _finaltoken, ReferaseToken = await _referese.GenerateToken(username) });
+                        return Ok(new TokenResponse() { Token = _finaltoken, ReferaseToken = await _referese.GenerateToken(username), UserRole = token.UserRole });
                     }
                     else
                     {

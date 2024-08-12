@@ -3284,3 +3284,922 @@ VALUES (@p0, @p1, @p2);
 2024-08-12 00:27:14.502 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserController.ConfirmRegistation (Access-Management-Web-API) in 162.1345ms
 2024-08-12 00:27:14.502 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserController.ConfirmRegistation (Access-Management-Web-API)'
 2024-08-12 00:27:14.503 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/User/ConfirmRegistation application/json 60 - 200 - application/json;+charset=utf-8 169.1933ms
+2024-08-12 10:46:23.498 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 10:46:23.731 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-12 10:46:23.733 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-12 10:46:23.737 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 10:46:23.739 +06:00 [INF] Hosting environment: Development
+2024-08-12 10:46:23.740 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-12 10:46:24.790 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-12 10:46:25.334 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 545.2617ms
+2024-08-12 10:46:25.353 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-12 10:46:25.353 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-12 10:46:25.390 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 36.8781ms
+2024-08-12 10:46:25.419 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.6235ms
+2024-08-12 10:46:25.476 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-12 10:46:25.699 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 222.8867ms
+2024-08-12 10:47:20.534 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize application/json 56
+2024-08-12 10:47:20.541 +06:00 [INF] CORS policy execution successful.
+2024-08-12 10:47:20.667 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 10:47:20.688 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 10:47:22.187 +06:00 [INF] Executed DbCommand (111ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 10:47:22.545 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 10:47:22.660 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_refereshtokenn] ([userId], [refereshtoken], [tokenid])
+VALUES (@p0, @p1, @p2);
+2024-08-12 10:47:22.684 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 10:47:22.692 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 1998.4908ms
+2024-08-12 10:47:22.693 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 10:47:22.701 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize application/json 56 - 200 - application/json;+charset=utf-8 2167.8529ms
+2024-08-12 10:48:49.784 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 10:48:50.050 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-12 10:48:50.052 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-12 10:48:50.057 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 10:48:50.060 +06:00 [INF] Hosting environment: Development
+2024-08-12 10:48:50.064 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-12 10:48:50.456 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-12 10:48:50.787 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 330.7887ms
+2024-08-12 10:48:50.798 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-12 10:48:50.798 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-12 10:48:50.817 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 18.9403ms
+2024-08-12 10:48:50.825 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3608ms
+2024-08-12 10:48:50.888 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-12 10:48:51.046 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.0590ms
+2024-08-12 11:27:18.948 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 11:27:18.959 +06:00 [INF] CORS policy execution successful.
+2024-08-12 11:27:18.962 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 14.9292ms
+2024-08-12 11:27:18.966 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 11:27:18.971 +06:00 [INF] CORS policy execution successful.
+2024-08-12 11:27:19.112 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:27:19.162 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 11:27:21.872 +06:00 [INF] Executed DbCommand (115ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 11:27:22.316 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 11:27:22.519 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 11:27:22.561 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 11:27:22.577 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 3405.7518ms
+2024-08-12 11:27:22.579 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:27:22.594 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 3627.4168ms
+2024-08-12 11:29:43.648 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 56
+2024-08-12 11:29:43.661 +06:00 [INF] CORS policy execution successful.
+2024-08-12 11:29:43.667 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:29:43.668 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 11:29:43.718 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 11:29:43.730 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 11:29:43.748 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 11:29:43.750 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 11:29:43.751 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 83.4747ms
+2024-08-12 11:29:43.752 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:29:43.752 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 56 - 200 - application/json;+charset=utf-8 104.2008ms
+2024-08-12 11:32:37.710 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 11:32:37.710 +06:00 [INF] CORS policy execution successful.
+2024-08-12 11:32:37.711 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 1.4864ms
+2024-08-12 11:32:37.713 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 11:32:37.713 +06:00 [INF] CORS policy execution successful.
+2024-08-12 11:32:37.720 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:32:37.720 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 11:32:37.842 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 11:32:37.855 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 11:32:37.872 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 11:32:37.873 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 11:32:37.874 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 154.0258ms
+2024-08-12 11:32:37.874 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 11:32:37.875 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 161.4686ms
+2024-08-12 12:07:23.560 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 12:07:23.562 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:07:23.569 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 7.2819ms
+2024-08-12 12:07:23.572 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 12:07:23.572 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:07:23.573 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 12:07:23.573 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 12:07:23.611 +06:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 12:07:23.615 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-08-12 12:07:23.617 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 44.4706ms
+2024-08-12 12:07:23.618 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 12:07:23.619 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 401 - application/problem+json;+charset=utf-8 46.8765ms
+2024-08-12 12:28:33.174 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - -
+2024-08-12 12:28:33.187 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:28:33.206 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:28:33.381 +06:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:28:33.391 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:28:33.395 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 188.4421ms
+2024-08-12 12:28:33.395 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:28:33.395 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - - - 200 - application/json;+charset=utf-8 221.0504ms
+2024-08-12 12:52:33.035 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:52:33.046 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:52:33.050 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:52:33.051 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:52:33.085 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:52:33.086 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:52:33.087 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 35.7956ms
+2024-08-12 12:52:33.087 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:52:33.087 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 53.1039ms
+2024-08-12 12:52:58.291 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:52:58.292 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:52:58.292 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:52:58.292 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:52:58.307 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:52:58.308 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:52:58.309 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 16.6941ms
+2024-08-12 12:52:58.309 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:52:58.309 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 18.9395ms
+2024-08-12 12:53:31.874 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:53:31.874 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:53:31.874 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:53:31.875 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:53:31.897 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:53:31.897 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:53:31.898 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 22.0594ms
+2024-08-12 12:53:31.898 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:53:31.898 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 24.1187ms
+2024-08-12 12:54:05.466 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:54:05.474 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:54:05.474 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:54:05.474 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:54:05.491 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:54:05.492 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:54:05.492 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 17.949ms
+2024-08-12 12:54:05.492 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:54:05.493 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 26.5072ms
+2024-08-12 12:54:10.352 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:54:10.353 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:54:10.353 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:54:10.353 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:54:10.364 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:54:10.365 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:54:10.366 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 12.131ms
+2024-08-12 12:54:10.366 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:54:10.366 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 13.3323ms
+2024-08-12 12:55:31.447 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 12:55:31.448 +06:00 [INF] CORS policy execution successful.
+2024-08-12 12:55:31.448 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:55:31.451 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 12:55:31.468 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 12:55:31.469 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 12:55:31.469 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 18.3573ms
+2024-08-12 12:55:31.469 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 12:55:31.469 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 22.9901ms
+2024-08-12 14:01:21.047 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:01:21.048 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:01:21.048 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:01:21.049 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:01:21.075 +06:00 [INF] Executed DbCommand (12ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:01:21.076 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:01:21.077 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 28.475ms
+2024-08-12 14:01:21.077 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:01:21.078 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 30.5054ms
+2024-08-12 14:05:36.084 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:05:36.087 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:05:36.094 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:05:36.094 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:05:36.122 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:05:36.123 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:05:36.124 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 29.681ms
+2024-08-12 14:05:36.124 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:05:36.125 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 41.0208ms
+2024-08-12 14:08:15.061 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:08:15.064 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:08:15.064 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:08:15.071 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:08:15.099 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:08:15.100 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:08:15.100 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 29.0507ms
+2024-08-12 14:08:15.100 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:08:15.101 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 40.4796ms
+2024-08-12 14:10:23.175 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:10:23.176 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:10:23.176 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:10:23.176 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:10:23.192 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:10:23.193 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:10:23.193 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 16.4503ms
+2024-08-12 14:10:23.193 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:10:23.194 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 18.6680ms
+2024-08-12 14:11:05.070 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:11:05.071 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:11:05.073 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:11:05.074 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:11:05.099 +06:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:11:05.099 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:11:05.100 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 21.1054ms
+2024-08-12 14:11:05.100 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:11:05.100 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 30.9704ms
+2024-08-12 14:11:52.062 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:11:52.064 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:11:52.067 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:11:52.067 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:11:52.087 +06:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:11:52.088 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:11:52.089 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 21.3921ms
+2024-08-12 14:11:52.089 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:11:52.089 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 27.2782ms
+2024-08-12 14:13:36.058 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:13:36.060 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:13:36.060 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:13:36.061 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:13:36.117 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:13:36.118 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:13:36.118 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 56.5236ms
+2024-08-12 14:13:36.118 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:13:36.118 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 60.0019ms
+2024-08-12 14:13:55.088 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:13:55.088 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:13:55.089 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:13:55.090 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:13:55.107 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:13:55.109 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:13:55.109 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 19.3145ms
+2024-08-12 14:13:55.109 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:13:55.109 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 21.5180ms
+2024-08-12 14:14:06.135 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:14:06.135 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:14:06.136 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:14:06.136 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:14:06.145 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:14:06.146 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:14:06.146 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 10.1486ms
+2024-08-12 14:14:06.146 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:14:06.146 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 11.5576ms
+2024-08-12 14:16:03.111 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:16:03.112 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:16:03.112 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:16:03.112 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:16:03.131 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:16:03.131 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:16:03.132 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 19.3745ms
+2024-08-12 14:16:03.132 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:16:03.132 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 21.0967ms
+2024-08-12 14:19:18.455 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 14:19:18.455 +06:00 [INF] CORS policy execution successful.
+2024-08-12 14:19:18.456 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:19:18.456 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 14:19:18.473 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 14:19:18.473 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 14:19:18.474 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 17.8688ms
+2024-08-12 14:19:18.474 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 14:19:18.474 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 18.7366ms
+2024-08-12 15:05:28.770 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:28.772 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:28.773 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:28.773 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:28.843 +06:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:28.844 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:28.844 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 71.2942ms
+2024-08-12 15:05:28.844 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:28.844 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 74.2637ms
+2024-08-12 15:05:30.603 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:30.603 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:30.603 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:30.603 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:30.608 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:30.608 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:30.609 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 5.3416ms
+2024-08-12 15:05:30.609 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:30.609 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 5.8528ms
+2024-08-12 15:05:31.464 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:31.464 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:31.465 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.465 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:31.470 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:31.471 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:31.471 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 6.0678ms
+2024-08-12 15:05:31.471 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.471 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 6.7823ms
+2024-08-12 15:05:31.698 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:31.699 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:31.699 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.699 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:31.703 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:31.703 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:31.704 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.7122ms
+2024-08-12 15:05:31.704 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.704 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 5.2974ms
+2024-08-12 15:05:31.956 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:31.957 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:31.957 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.957 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:31.962 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:31.963 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:31.963 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 6.3421ms
+2024-08-12 15:05:31.963 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:31.963 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 7.0692ms
+2024-08-12 15:05:32.205 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:32.205 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:32.205 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:32.205 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:32.211 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:32.211 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:32.211 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 6.27ms
+2024-08-12 15:05:32.211 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:32.212 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 7.0085ms
+2024-08-12 15:05:32.441 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:32.441 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:32.441 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:32.441 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:32.446 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:32.446 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:32.447 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 5.2999ms
+2024-08-12 15:05:32.447 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:32.447 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 6.1614ms
+2024-08-12 15:05:51.196 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:51.208 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:51.211 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:51.212 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:51.219 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:51.219 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:51.220 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 8.5ms
+2024-08-12 15:05:51.221 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:51.221 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 24.1976ms
+2024-08-12 15:05:52.063 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:52.063 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:52.063 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:52.064 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:52.071 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:52.072 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:52.072 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 8.3389ms
+2024-08-12 15:05:52.072 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:52.072 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 9.8897ms
+2024-08-12 15:05:53.827 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:05:53.827 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:05:53.828 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:53.828 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:05:53.838 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:05:53.839 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:05:53.839 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 11.3498ms
+2024-08-12 15:05:53.839 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:05:53.839 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 12.6903ms
+2024-08-12 15:06:02.981 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:06:02.981 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:02.981 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:02.981 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:06:03.001 +06:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:06:03.001 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:06:03.001 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 20.3144ms
+2024-08-12 15:06:03.001 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:03.002 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 21.1626ms
+2024-08-12 15:06:06.836 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - -
+2024-08-12 15:06:06.836 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:06.836 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:06.836 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:06:06.849 +06:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:06:06.850 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:06:06.850 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 13.6486ms
+2024-08-12 15:06:06.850 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:06.850 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=3f/P7JBXlPPLNTJF6SyB42oKvGoTJ9cwe0epMW2rFC0= - - - 200 - application/json;+charset=utf-8 14.1308ms
+2024-08-12 15:06:25.131 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 15:06:25.131 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:25.131 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 0.2438ms
+2024-08-12 15:06:25.133 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 15:06:25.133 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:25.133 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:06:25.133 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 15:06:25.172 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 15:06:25.180 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 15:06:25.188 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 15:06:25.189 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 15:06:25.189 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 55.6932ms
+2024-08-12 15:06:25.189 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:06:25.189 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 56.2088ms
+2024-08-12 15:06:28.708 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:06:28.708 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:28.708 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:28.708 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:06:28.713 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:06:28.713 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:06:28.713 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.8333ms
+2024-08-12 15:06:28.713 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:28.713 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.3146ms
+2024-08-12 15:06:29.662 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:06:29.662 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:06:29.662 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:29.662 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:06:29.667 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:06:29.667 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:06:29.667 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.8649ms
+2024-08-12 15:06:29.668 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:06:29.668 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.5655ms
+2024-08-12 15:07:36.354 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:36.354 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:36.354 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:36.354 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:36.372 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:36.372 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:36.372 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 17.9654ms
+2024-08-12 15:07:36.372 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:36.372 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 18.8536ms
+2024-08-12 15:07:40.668 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:40.668 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:40.668 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:40.668 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:40.672 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:40.672 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:40.672 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 3.6162ms
+2024-08-12 15:07:40.672 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:40.672 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 4.0286ms
+2024-08-12 15:07:41.447 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:41.447 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:41.447 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.447 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:41.450 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:41.451 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:41.451 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.3684ms
+2024-08-12 15:07:41.451 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.451 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 4.8093ms
+2024-08-12 15:07:41.669 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:41.669 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:41.669 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.669 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:41.673 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:41.674 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:41.674 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.4942ms
+2024-08-12 15:07:41.674 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.674 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.0251ms
+2024-08-12 15:07:41.880 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:41.880 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:41.880 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.880 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:41.885 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:41.885 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:41.885 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.9236ms
+2024-08-12 15:07:41.885 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:41.886 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.4374ms
+2024-08-12 15:07:42.081 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:42.081 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:42.081 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.081 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:42.085 +06:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:42.086 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:42.086 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.7749ms
+2024-08-12 15:07:42.086 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.086 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.2371ms
+2024-08-12 15:07:42.313 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:42.314 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:42.314 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.314 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:42.318 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:42.318 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:42.319 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.74ms
+2024-08-12 15:07:42.319 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.319 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.1576ms
+2024-08-12 15:07:42.540 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:42.540 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:42.540 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.540 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:42.545 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:42.545 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:42.545 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.6213ms
+2024-08-12 15:07:42.545 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.545 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.0780ms
+2024-08-12 15:07:42.748 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:42.748 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:42.748 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.748 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:42.752 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:42.753 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:42.753 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.4674ms
+2024-08-12 15:07:42.753 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:42.753 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 4.8723ms
+2024-08-12 15:07:55.332 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:55.332 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:55.332 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:55.332 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:55.337 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:55.338 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:55.338 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 5.2741ms
+2024-08-12 15:07:55.338 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:55.338 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 6.2283ms
+2024-08-12 15:07:58.528 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - -
+2024-08-12 15:07:58.528 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:07:58.528 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:58.528 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:07:58.532 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:07:58.533 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:07:58.533 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 4.6818ms
+2024-08-12 15:07:58.533 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:07:58.533 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=ZWn9VArWY3afzbr1uoHORMT9ss5YjmI5SPMOVKZYVN8= - - - 200 - application/json;+charset=utf-8 5.4657ms
+2024-08-12 15:08:13.197 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 15:08:13.197 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:08:13.197 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 0.3808ms
+2024-08-12 15:08:13.198 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 15:08:13.198 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:08:13.198 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:08:13.198 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 15:08:13.216 +06:00 [INF] Executed DbCommand (15ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 15:08:13.225 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 15:08:13.232 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 15:08:13.232 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 15:08:13.233 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 34.1905ms
+2024-08-12 15:08:13.233 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:08:13.233 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 34.6172ms
+2024-08-12 15:09:20.841 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - -
+2024-08-12 15:09:20.841 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:09:20.841 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:09:20.842 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:09:49.761 +06:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:12:57.190 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 15:12:57.419 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-12 15:12:57.421 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-12 15:12:57.425 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 15:12:57.426 +06:00 [INF] Hosting environment: Development
+2024-08-12 15:12:57.428 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-12 15:12:58.039 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-12 15:12:58.359 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 317.7972ms
+2024-08-12 15:12:58.366 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-12 15:12:58.366 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-12 15:12:58.384 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 18.8929ms
+2024-08-12 15:12:58.398 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.6857ms
+2024-08-12 15:12:58.446 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-12 15:12:58.584 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.5530ms
+2024-08-12 15:13:45.318 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 56
+2024-08-12 15:13:45.328 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:13:46.073 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:13:46.104 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 15:13:48.420 +06:00 [INF] Executed DbCommand (87ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 15:13:48.760 +06:00 [INF] Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 15:13:48.885 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 15:13:48.919 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 15:13:48.934 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 2823.2804ms
+2024-08-12 15:13:48.936 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:13:48.945 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 56 - 200 - application/json;+charset=utf-8 3628.0175ms
+2024-08-12 15:14:43.161 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - -
+2024-08-12 15:14:43.164 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:14:43.167 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:14:43.174 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:14:51.990 +06:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:14:51.997 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:14:51.999 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 8824.2012ms
+2024-08-12 15:14:51.999 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:14:52.000 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - - - 200 - application/json;+charset=utf-8 8838.7994ms
+2024-08-12 15:14:58.496 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - -
+2024-08-12 15:14:58.500 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:14:58.506 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:14:58.506 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:15:00.985 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:15:00.986 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:15:00.986 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 2479.5218ms
+2024-08-12 15:15:00.986 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:15:00.986 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - - - 200 - application/json;+charset=utf-8 2490.7498ms
+2024-08-12 15:15:19.140 +06:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-12 15:15:19.343 +06:00 [INF] Now listening on: https://localhost:7202
+2024-08-12 15:15:19.345 +06:00 [INF] Now listening on: http://localhost:5244
+2024-08-12 15:15:19.349 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-12 15:15:19.351 +06:00 [INF] Hosting environment: Development
+2024-08-12 15:15:19.352 +06:00 [INF] Content root path: D:\My Work\Access-Management-System\Access-Management-Web-API\Access-Management-Web-API
+2024-08-12 15:15:19.912 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/index.html - -
+2024-08-12 15:15:20.211 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - -
+2024-08-12 15:15:20.211 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/_vs/browserLink - -
+2024-08-12 15:15:20.219 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/index.html - - - 200 - text/html;charset=utf-8 303.2959ms
+2024-08-12 15:15:20.229 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 18.2206ms
+2024-08-12 15:15:20.239 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.9284ms
+2024-08-12 15:15:20.290 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - -
+2024-08-12 15:15:20.399 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 108.7095ms
+2024-08-12 15:15:29.770 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - -
+2024-08-12 15:15:29.778 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:15:29.910 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:15:29.935 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:15:31.576 +06:00 [INF] Executed DbCommand (65ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:15:31.609 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:15:31.621 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 1682.8245ms
+2024-08-12 15:15:31.622 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:15:31.629 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - - - 200 - application/json;+charset=utf-8 1858.4353ms
+2024-08-12 15:15:32.626 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - -
+2024-08-12 15:15:32.630 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:15:32.632 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:15:32.633 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:15:32.668 +06:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:15:32.671 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:15:32.672 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 38.4638ms
+2024-08-12 15:15:32.672 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:15:32.672 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=fTu9SA8RFY5USunKTNTJY1h1AtIyYtf4FnXkD/rKWw4= - - - 200 - application/json;+charset=utf-8 46.8611ms
+2024-08-12 15:15:49.690 +06:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - -
+2024-08-12 15:15:49.691 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:15:49.693 +06:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7202/api/Authorize/GenerateToken - - - 204 - - 2.5188ms
+2024-08-12 15:15:49.696 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47
+2024-08-12 15:15:49.697 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:15:49.701 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:15:49.706 +06:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(Access_Management_Web_API.Model.UserCard) on controller Access_Management_Web_API.Controllers.AuthorizeController (Access-Management-Web-API).
+2024-08-12 15:15:49.889 +06:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userCard_username_0='?' (Size = 50) (DbType = AnsiString), @__userCard_password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[username], [t].[email], [t].[failattempt], [t].[isactive], [t].[islocked], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[username] = @__userCard_username_0 AND [t].[password] = @__userCard_password_1
+2024-08-12 15:15:50.120 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userId], [t].[refereshtoken], [t].[tokenid]
+FROM [tbl_refereshtokenn] AS [t]
+WHERE [t].[userId] = @__username_0
+2024-08-12 15:15:50.226 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refereshtokenn] SET [refereshtoken] = @p0
+OUTPUT 1
+WHERE [userId] = @p1;
+2024-08-12 15:15:50.239 +06:00 [INF] Executing OkObjectResult, writing value of type 'Access_Management_Web_API.Model.TokenResponse'.
+2024-08-12 15:15:50.240 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API) in 534.1909ms
+2024-08-12 15:15:50.241 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.AuthorizeController.GenerateToken (Access-Management-Web-API)'
+2024-08-12 15:15:50.244 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7202/api/Authorize/GenerateToken application/json 47 - 200 - application/json;+charset=utf-8 547.8287ms
+2024-08-12 15:16:49.330 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - -
+2024-08-12 15:16:49.331 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:16:49.331 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:16:49.331 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:16:49.343 +06:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:16:49.346 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:16:49.347 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 15.8303ms
+2024-08-12 15:16:49.347 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:16:49.347 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - - - 200 - application/json;+charset=utf-8 17.6308ms
+2024-08-12 15:16:52.529 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - -
+2024-08-12 15:16:52.530 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:16:52.530 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:16:52.530 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:16:52.534 +06:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:16:52.535 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:16:52.536 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 5.7811ms
+2024-08-12 15:16:52.536 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:16:52.536 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - - - 200 - application/json;+charset=utf-8 6.4908ms
+2024-08-12 15:18:37.381 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - -
+2024-08-12 15:18:37.382 +06:00 [INF] CORS policy execution successful.
+2024-08-12 15:18:37.382 +06:00 [INF] Executing endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:18:37.382 +06:00 [INF] Route matched with {action = "GetAllMenuesbyRole", controller = "UserRole"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllMenuesbyRole(System.String) on controller Access_Management_Web_API.Controllers.UserRoleController (Access-Management-Web-API).
+2024-08-12 15:18:37.393 +06:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userrole_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[menucode] AS [code], [t0].[name]
+FROM [tbl_rolepermission] AS [t]
+LEFT JOIN [tbl_menu] AS [t0] ON [t].[menucode] = [t0].[code]
+WHERE [t].[userrole] = @__userrole_0 AND [t].[haveview] = CAST(1 AS bit)
+2024-08-12 15:18:37.394 +06:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Access_Management_Web_API.Model.Appmenu, Access-Management-Web-API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-12 15:18:37.395 +06:00 [INF] Executed action Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API) in 12.5071ms
+2024-08-12 15:18:37.395 +06:00 [INF] Executed endpoint 'Access_Management_Web_API.Controllers.UserRoleController.GetAllMenuesbyRole (Access-Management-Web-API)'
+2024-08-12 15:18:37.395 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7202/api/UserRole/GetAllMenuesbyRole?userrole=user - - - 200 - application/json;+charset=utf-8 14.0997ms
