@@ -45,7 +45,7 @@ namespace Access_Management_Web_API.Controllers
                         new Claim(ClaimTypes.Role, user.Role)
 
                     }),
-                    Expires = DateTime.UtcNow.AddSeconds(30),
+                    Expires = DateTime.UtcNow.AddMinutes(100),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256)
 
 
@@ -94,7 +94,7 @@ namespace Access_Management_Web_API.Controllers
                     {
                         var _newtoken = new JwtSecurityToken(
                             claims: principal.Claims.ToArray(),
-                            expires: DateTime.Now.AddSeconds(30),
+                            expires: DateTime.Now.AddMinutes(100),
                             signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SequrityKey)),
                             SecurityAlgorithms.HmacSha256)
                             );

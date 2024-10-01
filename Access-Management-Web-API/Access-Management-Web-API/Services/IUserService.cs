@@ -14,5 +14,9 @@ namespace Access_Management_Web_API.Services
         Task<ApiResponse> UpdatePassword(string username, string Password, string Otptext);
         Task<ApiResponse> UpdateStatus(string username, bool status);
         Task<ApiResponse> UpdateUserRole(string username, string userRole);
+
+        Task<List<UserModel>> GetAll();
+
+        Task<UserModel> GetbyCode(string code);
     }
 }

@@ -23,7 +23,7 @@ namespace Access_Management_Web_API.Controllers
         {
             var data = await _service.UserRegisteration(register);
 
-            return Ok(data);    
+            return Ok(data);
         }
 
         [HttpPost("ConfirmRegistation")]
@@ -44,7 +44,7 @@ namespace Access_Management_Web_API.Controllers
             return Ok(data);
         }
 
-        [HttpPost("ForgetPassword")]
+        [HttpGet("ForgetPassword")]
 
         public async Task<IActionResult> ForgetPassword(string username)
         {
@@ -79,5 +79,45 @@ namespace Access_Management_Web_API.Controllers
 
             return Ok(data);
         }
+
+        [HttpGet("GetAll")]
+
+        public async Task<IActionResult> GetAll()
+        {
+
+            var data = await _service.GetAll();
+
+            if (data == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(data);
+
+        }
+
+
+
+        [HttpGet("GetAbyCode")]
+
+        public async Task<IActionResult> GetAllbycode( string code)
+        {
+
+            var data = await _service.GetbyCode(code);
+
+            if (data == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(data);
+
+        }
+
+
+
+
+
+
     }
 }

@@ -32,7 +32,7 @@ namespace Access_Management_Web_API.Container
                 await _context.TblCustomers.AddAsync(customer);
                 await _context.SaveChangesAsync();
                 response.ResponseCode = 201;
-                response.Result = customer.Code;
+                response.Result = "pass";
 
             }
             catch (Exception ex)
@@ -80,7 +80,7 @@ namespace Access_Management_Web_API.Container
                    _context.TblCustomers.Remove(customer);
                    await _context.SaveChangesAsync();
                     response.ResponseCode = 200;
-                    response.Result = code;
+                    response.Result = "pass";
                 }
                 else
                 {
@@ -113,7 +113,7 @@ namespace Access_Management_Web_API.Container
                     data.Creditlimit = customer.Creditlimit;
                     await _context.SaveChangesAsync();
                     response.ResponseCode = 200;
-                    response.Result = code;
+                    response.Result = "pass";
                 }
                 else
                 {

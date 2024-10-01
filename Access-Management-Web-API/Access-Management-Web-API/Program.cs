@@ -53,9 +53,10 @@ builder.Services.AddAuthentication(item =>
     };
 });
 
-var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperHandelar()));
-IMapper mapper = automapper.CreateMapper();
-builder.Services.AddSingleton(mapper);
+//var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperHandelar()));
+//IMapper mapper = automapper.CreateMapper();
+//builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(typeof(AutoMapperHandelar));
 
 builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
 {

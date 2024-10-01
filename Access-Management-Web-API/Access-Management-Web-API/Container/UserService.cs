@@ -3,6 +3,7 @@ using Access_Management_Web_API.Model;
 using Access_Management_Web_API.Repos;
 using Access_Management_Web_API.Repos.Models;
 using Access_Management_Web_API.Services;
+using AutoMapper;
 using AutoMapper.Internal;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,11 +13,13 @@ namespace Access_Management_Web_API.Container
     {
         private readonly LarnDataContext _context;
         private readonly IEmailService _emailService;
+        private readonly IMapper _mapper;
 
-        public UserService(LarnDataContext context,IEmailService emailService)
+        public UserService(LarnDataContext context,IEmailService emailService,IMapper mapper)
         {
             _context = context;
             _emailService = emailService;
+            _mapper = mapper;
         }
         public async Task<ApiResponse> ConfirmRegister(int userid, string username, string otptext)
         {
@@ -203,7 +206,7 @@ namespace Access_Management_Web_API.Container
             {
                 user.Isactive = status;
                 await _context.SaveChangesAsync();
-                response.Result = "Pass";
+                response.Result = "pass";
                 response.Message = "User Status Changed";
             }
 
@@ -227,7 +230,7 @@ namespace Access_Management_Web_API.Container
             {
                 user.Role = userrole;
                 await _context.SaveChangesAsync();
-                response.Result = "Pass";
+                response.Result = "pass";
                 response.Message = "User Role Changed";
             }
 
@@ -323,6 +326,43 @@ namespace Access_Management_Web_API.Container
 
             return response;
 
+        }
+
+        public async Task<List<UserModel>> GetAll()
+        {
+            List<UserModel> _response = new List<UserModel>();
+
+            var data = await _context.TblUsers.ToListAsync();
+
+            if (data != null)
+            {
+                _response = _mapper.Map<List<TblUser>, List<UserModel>>(data);
+            }
+            return _response;
+        }
+
+        //public async Task<List<UserModel>> GetAll()
+        //{
+        //    var data = await _context.TblUsers.ToListAsync();
+
+        //    if (data != null)
+        //    {
+        //        // No need to specify the types explicitly, AutoMapper handles it.
+        //        return _mapper.Map<List<UserModel>>(data);
+        //    }
+
+        //    return new List<UserModel>();
+        //}
+
+        public async Task<UserModel> GetbyCode(string code)
+        {
+            UserModel _response = new UserModel();
+            var data = await _context.TblUsers.FindAsync(code);
+            if(data != null)
+            {
+                _response = _mapper.Map<TblUser, UserModel>(data);
+            }
+            return _response;
         }
     }
 }
